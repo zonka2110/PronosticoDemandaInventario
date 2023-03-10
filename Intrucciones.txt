@@ -1,2 +1,30 @@
-Pasos: 
+La carpeta GPI contiene todos los archivos necesarios para ejecutar
+muestras disponibles, no se adjunto la totalidad de los archivos para 
+resguardar la información de la empresa que brindo la data.
 
+Para el codigo de predicción:
+
+Para ejecutarlo se debe runnear el codigo Forecast_test, pues este llama al codigo
+Predict_Paralelo_local.
+
+Salidas:
+- Se llena la carpeta Plots contenida en la carpeta GPI, la cual muestra las graficas de cada uno de los productos
+disponibles a pronosticar.
+- En la carpeta GPI/Results/Errores, apareceran los errores de cada metodo de pronostico ejecutado.
+- En la carpeta GPI/Results/Agregado se encuentra la información resumida del pronostico
+
+
+Para el sistema de proyección de inventario:
+
+Primero se debe ejecutar el simulador_1_de_2
+
+Salidas:
+- Este codigo llena las carpetas ResultsCompraDirecta, ResultsCompraCentral, ResultsAbasteciientoCentral y ResultsCDyAC
+- En cada carpeta mencionada menos en la ResultsCDyAC tenemos las carpetas de plots de inventario y valor inventario, las cuales tambien se llenaran automaticamentes
+
+
+Tras finalizar el codigo de simulador_1_de_2 se dbe ejecutar el codigo simulador_2_de_2
+Salidas:
+- FirstCase llena la carpeta Results1 el cual contempla el consolidado por sku
+- SecondCase llena la carpeta Results2 el cual contempla el consolidado por Centros o sucursales
+- ThirdCase llena la carpeta Results3 que contempla el valor de inventario diario para toda la empresa.
