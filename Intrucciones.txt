@@ -28,3 +28,5 @@ Salidas:
 - FirstCase llena la carpeta Results1 el cual contempla el consolidado por sku
 - SecondCase llena la carpeta Results2 el cual contempla el consolidado por Centros o sucursales
 - ThirdCase llena la carpeta Results3 que contempla el valor de inventario diario para toda la empresa.
+
+.
