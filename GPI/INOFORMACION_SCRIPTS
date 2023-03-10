@@ -1,0 +1,39 @@
+Forecast_test.py
+# Archivo main
+# Realizar el pronóstico por sku
+# Input: sku (en según su IDE del archivo de instances.txt)
+# Output: pronóstico por sku
+
+Predict_paralelo_local.py
+# Archivo Class
+# Contiene los códigos para desarrollar el pronósitco
+
+ConnectionSQL.py (sirve para los otros script)
+# Se conecta con la información del servidor
+
+Preprocessing.py
+# Archivo main
+# Se genera la data a usar para el pronóstico
+# Output: data de pronóstico
+
+GenerateData.py
+# Archivo Class
+# Contiene el código del preprocessng
+
+SplitData.py
+# Luego de crear la data para el pronósitco (Preprocessing) divide la data por sku
+# Input: archivo de salida de Preprocessing
+# Output: archivos por sku 
+
+JoinForecast.py
+# Luego de correr todos los skus de Forecast_test, se junta la data del pronóstico
+# Input: pronóstico de Forcast_test (todos)
+# Output: pronóstico unificado
+
+Supplier.py
+# Genera la porpuesta de compra y de abastecimiento.
+# Input: pronóstico de JoinForcast
+# Output: propuesta de comrpa y de abastecimiento
+
+instances.txt
+# Tiene la clave de ide-sku
